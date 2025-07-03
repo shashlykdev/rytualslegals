@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rytuals - Legal</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #111;
+        }
+        .tab-container {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-bottom: none;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab.active {
+            border-color: #ddd;
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: -1px;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background-color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rytuals Legal Documents</h1>
+
+    <div class="tab-container">
+        <div class="tab active" onclick="openTab(event, 'privacy')">Privacy Policy</div>
+        <div class="tab" onclick="openTab(event, 'terms')">Terms of Service</div>
+    </div>
+
+    <div id="privacy" class="tab-content active">
+        <h2>Privacy Policy</h2>
+        <p><strong>Effective Date:</strong> July 1, 2025</p>
+        <p>Your privacy and spiritual journey are sacred to us. This policy explains how Rytuals collects, uses, and protects your personal information.</p>
+
+        <h3>Information We Collect</h3>
+        <h4>Account Information</h4>
+        <ul>
+            <li>Email address (for account creation and communication)</li>
+            <li>Full name (optional, for personalization)</li>
+            <li>Profile picture (optional)</li>
+        </ul>
+        <h4>Birth & Astrological Data</h4>
+        <ul>
+            <li>Birth date (required for astrological calculations)</li>
+            <li>Birth time (optional, for precise chart readings)</li>
+            <li>Birth location (optional, for location-based calculations)</li>
+            <li>Calculated zodiac signs (sun, moon, rising)</li>
+        </ul>
+        <h4>Spiritual Preferences</h4>
+        <ul>
+            <li>Selected spiritual interests (astrology, tarot, numerology, etc.)</li>
+            <li>Reading history and preferences</li>
+        </ul>
+        <h4>Device Information</h4>
+        <ul>
+            <li>App usage data for improving your experience</li>
+            <li>Device type and operating system version</li>
+            <li>Crash reports and performance data</li>
+        </ul>
+
+        <h3>How We Use Your Information</h3>
+        <h4>Personalized Spiritual Guidance</h4>
+        <p>We use your birth data and spiritual interests to provide personalized horoscopes, tarot readings, and cosmic insights tailored to your unique astrological profile.</p>
+        <h4>AI-Powered Features</h4>
+        <p>Your name, zodiac sign, and spiritual interests are securely shared with OpenAI to generate personalized spiritual content and guidance. This data is processed in real-time and not stored by OpenAI.</p>
+        <h4>Account Management</h4>
+        <p>Your email and profile information help us maintain your account, provide customer support, and deliver important updates about our services.</p>
+        <h4>App Improvement</h4>
+        <p>Anonymized usage data helps us understand how you use Rytuals and improve our features and user experience.</p>
+
+        <h3>Information Sharing</h3>
+        <h4>AI Content Generation</h4>
+        <p>We share your name, zodiac sign, and spiritual interests with OpenAI to generate personalized spiritual content. OpenAI does not store this information.</p>
+        <h4>Authentication Services</h4>
+        <p>When you sign in with Apple or Google, we receive basic profile information (name, email) directly from these services. We do not share your data back with them.</p>
+        <h4>What We Don't Share</h4>
+        <p>We never sell, rent, or trade your personal information. We don't share your data with advertisers, marketing companies, or data brokers. Your spiritual journey remains private.</p>
+
+        <h3>Data Storage & Security</h3>
+        <h4>Secure Cloud Storage</h4>
+        <p>Your data is securely stored using Supabase, a trusted cloud platform with enterprise-grade security. All data is encrypted in transit and at rest.</p>
+        <h4>Access Controls</h4>
+        <p>We implement Row Level Security (RLS) policies ensuring you can only access your own data. Our backend requires authentication for all data access.</p>
+        <h4>Data Minimization</h4>
+        <p>We only collect data necessary to provide your spiritual guidance experience. No unnecessary tracking or data collection occurs.</p>
+
+        <h3>Your Rights & Controls</h3>
+        <h4>Access & Update</h4>
+        <p>You can view and update your profile information, birth data, and spiritual interests anytime through the Edit Profile section.</p>
+        <h4>Data Portability</h4>
+        <p>You can request a copy of your personal data by contacting our support team. We'll provide your data in a portable format.</p>
+        <h4>Account Deletion</h4>
+        <p>You can delete your account and all associated data at any time. This action is permanent and cannot be undone.</p>
+        <h4>Notification Controls</h4>
+        <p>You control all notification preferences and can disable them anytime through your device settings or our app settings.</p>
+
+        <h3>Third-Party Services</h3>
+        <h4>OpenAI</h4>
+        <p>We use OpenAI's GPT-4 model to generate personalized spiritual content. Your data is processed in real-time and not stored by OpenAI. View OpenAI's privacy policy at openai.com/privacy.</p>
+        <h4>Supabase</h4>
+        <p>Our backend infrastructure is powered by Supabase. They provide secure data storage and authentication services. View Supabase's privacy policy at supabase.com/privacy.</p>
+        <h4>Authentication Providers</h4>
+        <p>Apple Sign-In and Google Sign-In provide secure authentication. These services only share basic profile information with your consent.</p>
+
+        <h3>Children's Privacy</h3>
+        <p>Rytuals is intended for users 13 years and older. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>We may update this privacy policy to reflect changes in our practices or for legal reasons. We'll notify you of significant changes through the app or email. Your continued use of Rytuals constitutes acceptance of any updates.</p>
+
+        <h3>Contact Us</h3>
+        <p>Questions about your privacy or this policy? We're here to help:</p>
+        <p>Email: privacy@shashlyk.dev</p>
+        <p>Developer: Shashlyk.dev</p>
+    </div>
+
+    <div id="terms" class="tab-content">
+        <h2>Terms of Service</h2>
+        <p><strong>Effective Date:</strong> July 1, 2025</p>
+        <p>Welcome to Rytuals. By using our app, you agree to these terms and our commitment to providing you with authentic spiritual guidance.</p>
+
+        <h3>Acceptance of Terms</h3>
+        <p>By downloading, installing, or using Rytuals, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our app.</p>
+
+        <h3>Description of Service</h3>
+        <h4>Spiritual Guidance Platform</h4>
+        <p>Rytuals provides AI-powered spiritual guidance including astrology readings, tarot consultations, numerology analysis, and personal journaling tools for self-discovery and spiritual growth.</p>
+        <h4>Free and Premium Features</h4>
+        <ul>
+            <li><strong>Free Access:</strong> Basic daily horoscopes, limited spiritual content, and basic app features</li>
+            <li><strong>Premium Subscription:</strong> Unlimited access to Tarot & Oracle readings, unlimited Oracle questions, unlimited journal entries, and advanced spiritual features</li>
+        </ul>
+        <h4>AI-Generated Content</h4>
+        <p>Our spiritual guidance is generated using artificial intelligence and should be used for entertainment and personal reflection purposes. It is not a substitute for professional advice, medical treatment, or psychological counseling.</p>
+
+        <h3>Subscription Terms</h3>
+        <h4>Premium Subscription Plans</h4>
+        <ul>
+            <li><strong>Monthly:</strong> $6.99 per month</li>
+            <li><strong>Annual:</strong> $59.99 per year (equivalent to $4.17/month)</li>
+        </ul>
+        <p>Prices are in US dollars and may vary in other countries.</p>
+        <h4>Free Tier Limitations</h4>
+        <ul>
+            <li>Oracle consultations: Limited to 3 questions per day</li>
+            <li>Journal entries: Limited to 5 entries per month</li>
+            <li>Tarot & Oracle in Discover: Premium subscription required</li>
+        </ul>
+        <h4>Auto-Renewal</h4>
+        <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period.</p>
+        <h4>Cancellation</h4>
+        <p>You can cancel your subscription anytime through your Apple ID account settings. Cancellation takes effect at the end of the current billing period. No refunds are provided for unused portions of the subscription period.</p>
+        <h4>Free Trial</h4>
+        <p>If a free trial is offered, you can cancel anytime during the trial period without charge. If you don't cancel, you'll be charged the subscription fee when the trial ends.</p>
+
+        <h3>User Responsibilities</h3>
+        <h4>Account Security</h4>
+        <p>You are responsible for maintaining the security of your account and for all activities that occur under your account. Notify us immediately of any unauthorized use.</p>
+        <h4>Appropriate Use</h4>
+        <p>You agree to use Rytuals for personal, non-commercial purposes only. You will not:</p>
+        <ul>
+            <li>Violate any laws or regulations</li>
+            <li>Infringe on others' rights</li>
+            <li>Attempt to hack or reverse engineer the app</li>
+            <li>Share your account credentials</li>
+        </ul>
+        <h4>Age Requirements</h4>
+        <p>You must be at least 13 years old to use Rytuals. Users under 18 should have parental consent. Some spiritual content may be more appropriate for mature audiences.</p>
+
+        <h3>Intellectual Property</h3>
+        <h4>Our Content</h4>
+        <p>All content in Rytuals, including text, graphics, logos, icons, images, audio clips, and software, is owned by Shashlyk.dev and protected by copyright and other intellectual property laws.</p>
+        <h4>Your Content</h4>
+        <p>You retain ownership of content you create in Rytuals (like journal entries). By using our app, you grant us a limited license to store and process your content to provide our services.</p>
+        <h4>AI-Generated Content</h4>
+        <p>Spiritual readings and guidance generated by our AI system are provided for your personal use. You may not redistribute or commercialize this content.</p>
+
+        <h3>Important Disclaimers</h3>
+        <h4>Entertainment Purposes</h4>
+        <p>Rytuals is designed for entertainment, self-reflection, and personal growth. Our spiritual guidance, including astrology, tarot, and numerology readings, should not be considered professional advice.</p>
+        <h4>No Medical Advice</h4>
+        <p>Our app does not provide medical, psychological, legal, or financial advice. If you need professional guidance, please consult qualified professionals in the relevant fields.</p>
+        <h4>AI Limitations</h4>
+        <p>While our AI strives to provide meaningful spiritual guidance, it may occasionally produce inaccurate or inappropriate content. Use your judgment and intuition when interpreting readings.</p>
+        <h4>Service Availability</h4>
+        <p>We strive to keep Rytuals available 24/7, but we cannot guarantee uninterrupted service. We may occasionally need to perform maintenance or updates that temporarily affect availability.</p>
+
+        <h3>Privacy and Data Protection</h3>
+        <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your personal information. By using Rytuals, you also agree to our Privacy Policy.</p>
+
+        <h3>Third-Party Services</h3>
+        <h4>Apple App Store</h4>
+        <p>Your subscription is managed through Apple's App Store. Apple's terms and conditions apply to all purchases and subscriptions made through the App Store.</p>
+        <h4>External Links</h4>
+        <p>Rytuals may contain links to third-party websites or services. We are not responsible for the content or practices of these external sites.</p>
+
+        <h3>Limitation of Liability</h3>
+        <p>To the maximum extent permitted by law, Shashlyk.dev shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of Rytuals. Our total liability shall not exceed the amount you paid for your subscription in the 12 months preceding the claim.</p>
+
+        <h3>Termination</h3>
+        <h4>Your Rights</h4>
+        <p>You may stop using Rytuals at any time and delete your account through the app settings. Your subscription will continue until the end of the current billing period.</p>
+        <h4>Our Rights</h4>
+        <p>We may suspend or terminate your access to Rytuals if you violate these terms or engage in harmful behavior. We'll provide notice when possible, except in cases of serious violations.</p>
+
+        <h3>Changes to These Terms</h3>
+        <p>We may update these Terms of Service to reflect changes in our practices, legal requirements, or app features. We'll notify you of significant changes through the app or email. Your continued use constitutes acceptance of the updated terms.</p>
+
+        <h3>Governing Law</h3>
+        <p>These Terms of Service are governed by the laws of the United States and the state in which Shashlyk.dev is incorporated, without regard to conflict of law principles.</p>
+
+        <h3>Contact Us</h3>
+        <p>Questions about these terms? We're here to help:</p>
+        <p>Email: support@shashlyk.dev</p>
+        <p>Developer: Shashlyk.dev</p>
+        <p>Last Updated: January 1, 2025</p>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
