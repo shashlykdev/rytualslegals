@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rytuals - FAQ & Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #111;
+        }
+        .tab-container {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-bottom: none;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px 5px 0 0;
+            white-space: nowrap;
+        }
+        .tab.active {
+            border-color: #ddd;
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: -1px;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background-color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        .faq-answer {
+            color: #555;
+            margin-left: 0;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .feature-card h4 {
+            margin-top: 0;
+            color: #495057;
+        }
+        .contact-info {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rytuals FAQ & Support</h1>
+
+    <div class="tab-container">
+        <div class="tab active" onclick="openTab(event, 'getting-started')">Getting Started</div>
+        <div class="tab" onclick="openTab(event, 'features')">Features</div>
+        <div class="tab" onclick="openTab(event, 'subscriptions')">Subscriptions</div>
+        <div class="tab" onclick="openTab(event, 'technical')">Technical</div>
+        <div class="tab" onclick="openTab(event, 'contact')">Contact</div>
+    </div>
+
+    <div id="getting-started" class="tab-content active">
+        <h2>Getting Started</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">What is Rytuals?</div>
+            <div class="faq-answer">
+                Rytuals is an AI-powered spiritual guidance app that provides personalized astrology readings, tarot consultations, oracle conversations, and spiritual journaling. We combine ancient wisdom with modern technology to offer authentic cosmic insights tailored to your unique astrological profile.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I create an account?</div>
+            <div class="faq-answer">
+                You can sign up using:
+                <ul>
+                    <li><strong>Apple Sign-In:</strong> One-tap signup with your Apple ID</li>
+                    <li><strong>Google Sign-In:</strong> Quick signup with your Google account</li>
+                    <li><strong>Email:</strong> Create an account with your email and password</li>
+                </ul>
+                After signing up, you'll complete a brief onboarding process to set up your cosmic profile.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What information do I need to provide during onboarding?</div>
+            <div class="faq-answer">
+                To provide accurate astrological guidance, we collect:
+                <ul>
+                    <li><strong>Birth date</strong> (required) - for zodiac sign calculation</li>
+                    <li><strong>Birth time</strong> (optional) - for precise chart readings</li>
+                    <li><strong>Birth location</strong> (optional) - for location-based calculations</li>
+                    <li><strong>Spiritual interests</strong> - to personalize your experience</li>
+                </ul>
+                All information is securely stored and used only to enhance your spiritual guidance.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is Rytuals free to use?</div>
+            <div class="faq-answer">
+                Yes! Rytuals offers both free and premium features:
+                <ul>
+                    <li><strong>Free:</strong> Daily horoscopes, limited oracle conversations (3/day), basic tarot readings, and 5 journal entries per month</li>
+                    <li><strong>Premium:</strong> Unlimited access to all features, advanced birth chart analysis, detailed compatibility reports, and ad-free experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <strong>Quick Start Tip:</strong> After creating your account, visit the Today tab for your personalized daily horoscope, then explore the Discover tab to try tarot readings and oracle conversations!
+        </div>
+    </div>
+
+    <div id="features" class="tab-content">
+        <h2>Features & How to Use</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🌟 Daily Horoscope</h4>
+                <p>Personalized daily guidance based on your zodiac sign and current planetary transits.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🃏 Tarot Readings</h4>
+                <p>AI-powered interpretations of traditional tarot cards with cosmic insights.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔮 Oracle Conversations</h4>
+                <p>Chat with your personal oracle for spiritual guidance and answers.</p>
+            </div>
+            <div class="feature-card">
+                <h4>📖 Birth Chart</h4>
+                <p>Detailed astrological analysis including sun, moon, and rising signs.</p>
+            </div>
+            <div class="feature-card">
+                <h4>📝 Spiritual Journal</h4>
+                <p>Record dreams, thoughts, and spiritual experiences with AI interpretation.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🌙 Moon Phases</h4>
+                <p>Track lunar cycles and their influence on your spiritual journey.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I get a tarot reading?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Go to the <strong>Discover</strong> tab</li>
+                    <li>Select <strong>"Tarot & Oracle"</strong></li>
+                    <li>Tap <strong>"Draw Cards"</strong> to receive your reading</li>
+                    <li>Your AI-powered interpretation will be personalized based on your astrological profile</li>
+                </ol>
+                Note: Premium users get unlimited readings, while free users have daily limits.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How does the Oracle conversation work?</div>
+            <div class="faq-answer">
+                The Oracle feature provides conversational spiritual guidance:
+                <ul>
+                    <li>Ask questions about love, career, spiritual growth, or life decisions</li>
+                    <li>Receive personalized responses based on your astrological profile</li>
+                    <li>Continue the conversation for deeper insights</li>
+                    <li>Free users get 3 questions per day, premium users get unlimited access</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How accurate are the readings?</div>
+            <div class="faq-answer">
+                Our readings combine traditional astrological wisdom with AI technology for personalized insights. While we strive for meaningful guidance, please remember:
+                <ul>
+                    <li>All readings are for <strong>entertainment and self-reflection</strong> purposes</li>
+                    <li>Use your own judgment and intuition when interpreting guidance</li>
+                    <li>Readings should not replace professional advice for important decisions</li>
+                    <li>The AI learns from your preferences to provide more relevant insights over time</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I save my readings?</div>
+            <div class="faq-answer">
+                Yes! All your readings are automatically saved in your account:
+                <ul>
+                    <li><strong>Recent readings</strong> appear in your profile history</li>
+                    <li><strong>Journal entries</strong> are saved with timestamps</li>
+                    <li><strong>Oracle conversations</strong> are preserved for future reference</li>
+                    <li>You can review past insights anytime in your profile</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="subscriptions" class="tab-content">
+        <h2>Subscriptions & Billing</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">What premium plans are available?</div>
+            <div class="faq-answer">
+                We offer two premium subscription options:
+                <ul>
+                    <li><strong>Monthly:</strong> $6.99 per month</li>
+                    <li><strong>Annual:</strong> $59.99 per year (save $24 - equivalent to $4.17/month)</li>
+                </ul>
+                Both plans include unlimited access to all premium features.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What's included in premium?</div>
+            <div class="faq-answer">
+                Premium subscription includes:
+                <ul>
+                    <li><strong>Unlimited oracle conversations</strong> - ask as many questions as you want</li>
+                    <li><strong>Unlimited tarot readings</strong> - draw cards whenever inspiration strikes</li>
+                    <li><strong>Unlimited journal entries</strong> - record all your spiritual experiences</li>
+                    <li><strong>Advanced birth chart features</strong> - detailed planetary analysis</li>
+                    <li><strong>Compatibility reports</strong> - explore relationships with others</li>
+                    <li><strong>Priority cosmic insights</strong> - enhanced personalization</li>
+                    <li><strong>Ad-free experience</strong> - uninterrupted spiritual guidance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I subscribe to premium?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Go to your <strong>Profile</strong> tab</li>
+                    <li>Tap <strong>"Upgrade to Premium"</strong></li>
+                    <li>Choose your preferred plan (Monthly or Annual)</li>
+                    <li>Complete purchase through Apple's secure payment system</li>
+                    <li>Premium features activate immediately</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I cancel my subscription?</div>
+            <div class="faq-answer">
+                Subscriptions are managed through your Apple ID:
+                <ol>
+                    <li>Open <strong>Settings</strong> on your iPhone</li>
+                    <li>Tap your name at the top</li>
+                    <li>Select <strong>"Subscriptions"</strong></li>
+                    <li>Find <strong>"Rytuals"</strong> and tap it</li>
+                    <li>Tap <strong>"Cancel Subscription"</strong></li>
+                </ol>
+                Your premium features will continue until the end of your current billing period.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I get a refund?</div>
+            <div class="faq-answer">
+                Refunds are handled by Apple according to their App Store policies:
+                <ul>
+                    <li>Contact Apple Support directly for refund requests</li>
+                    <li>You can also request refunds through your Apple ID account</li>
+                    <li>Refund eligibility depends on Apple's terms and conditions</li>
+                    <li>We recommend trying the free version first to ensure Rytuals meets your needs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you offer free trials?</div>
+            <div class="faq-answer">
+                While we don't currently offer a traditional free trial, our free tier provides substantial access to experience Rytuals:
+                <ul>
+                    <li>Daily personalized horoscopes</li>
+                    <li>3 oracle questions per day</li>
+                    <li>Basic tarot readings</li>
+                    <li>5 journal entries per month</li>
+                </ul>
+                This allows you to fully evaluate the app before deciding on premium.
+            </div>
+        </div>
+    </div>
+
+    <div id="technical" class="tab-content">
+        <h2>Technical Support</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">What devices does Rytuals support?</div>
+            <div class="faq-answer">
+                Rytuals is designed for iOS devices:
+                <ul>
+                    <li><strong>Minimum iOS version:</strong> iOS 18.5</li>
+                    <li><strong>Compatible devices:</strong> iPhone and iPad</li>
+                    <li><strong>Optimized for:</strong> Latest iPhone models with full-screen support</li>
+                    <li><strong>Internet required:</strong> Yes, for AI-powered features and cloud sync</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">The app won't load or is crashing. What should I do?</div>
+            <div class="faq-answer">
+                Try these troubleshooting steps:
+                <ol>
+                    <li><strong>Force quit and restart</strong> the app</li>
+                    <li><strong>Check your internet connection</strong> - Rytuals requires internet for AI features</li>
+                    <li><strong>Update the app</strong> to the latest version from the App Store</li>
+                    <li><strong>Restart your device</strong> to clear temporary issues</li>
+                    <li><strong>Free up storage space</strong> if your device is running low</li>
+                </ol>
+                If problems persist, contact our support team.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I'm having issues with sign-in. What can I do?</div>
+            <div class="faq-answer">
+                Sign-in troubleshooting:
+                <ul>
+                    <li><strong>Apple Sign-In:</strong> Ensure you're signed into iCloud in Settings</li>
+                    <li><strong>Google Sign-In:</strong> Check that you're signed into your Google account in Safari</li>
+                    <li><strong>Email sign-in:</strong> Verify your email and password are correct</li>
+                    <li><strong>Network issues:</strong> Try switching between WiFi and cellular data</li>
+                    <li><strong>Clear cache:</strong> Delete and reinstall the app if necessary</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Why aren't my readings generating?</div>
+            <div class="faq-answer">
+                If readings aren't generating properly:
+                <ul>
+                    <li><strong>Check internet connection</strong> - AI features require stable internet</li>
+                    <li><strong>Verify account setup</strong> - ensure your birth data is complete</li>
+                    <li><strong>Free tier limits</strong> - check if you've reached daily limits</li>
+                    <li><strong>Server status</strong> - rarely, our AI service may be temporarily unavailable</li>
+                    <li><strong>App update</strong> - ensure you have the latest version</li>
+                </ul>
+                The app will show fallback content if AI services are temporarily unavailable.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I update my birth information?</div>
+            <div class="faq-answer">
+                To modify your astrological profile:
+                <ol>
+                    <li>Go to your <strong>Profile</strong> tab</li>
+                    <li>Tap <strong>"Edit Profile"</strong></li>
+                    <li>Update your birth date, time, or location</li>
+                    <li>Save changes - your readings will be updated accordingly</li>
+                </ol>
+                Note: Changing birth data will affect future readings and astrological calculations.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I delete my account?</div>
+            <div class="faq-answer">
+                To permanently delete your account and all data:
+                <ol>
+                    <li>Go to <strong>Profile</strong> → <strong>Settings</strong></li>
+                    <li>Scroll to the bottom</li>
+                    <li>Tap <strong>"Delete Account"</strong></li>
+                    <li>Confirm deletion</li>
+                </ol>
+                <strong>Warning:</strong> This action is permanent and cannot be undone. All your readings, journal entries, and profile data will be permanently deleted.
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="tab-content">
+        <h2>Contact & Support</h2>
+
+        <div class="contact-info">
+            <h3>📧 Get in Touch</h3>
+            <p>We're here to help with any questions or issues you may have.</p>
+            
+            <p><strong>General Support:</strong><br>
+            Email: <a href="mailto:support@shashlyk.dev">support@shashlyk.dev</a></p>
+            
+            <p><strong>Privacy Questions:</strong><br>
+            Email: <a href="mailto:privacy@shashlyk.dev">privacy@shashlyk.dev</a></p>
+            
+            <p><strong>Developer:</strong><br>
+            Shashlyk.dev</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What should I include in my support request?</div>
+            <div class="faq-answer">
+                To help us assist you quickly, please include:
+                <ul>
+                    <li><strong>Device model</strong> (e.g., iPhone 15 Pro)</li>
+                    <li><strong>iOS version</strong> (found in Settings → General → About)</li>
+                    <li><strong>App version</strong> (found in Profile → Settings)</li>
+                    <li><strong>Detailed description</strong> of the issue</li>
+                    <li><strong>Steps to reproduce</strong> the problem</li>
+                    <li><strong>Screenshots</strong> if applicable</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How quickly will I receive a response?</div>
+            <div class="faq-answer">
+                We aim to respond to all support requests within:
+                <ul>
+                    <li><strong>General inquiries:</strong> 24-48 hours</li>
+                    <li><strong>Technical issues:</strong> 12-24 hours</li>
+                    <li><strong>Billing questions:</strong> 12-24 hours</li>
+                    <li><strong>Privacy concerns:</strong> Within 24 hours</li>
+                </ul>
+                Response times may be longer during weekends and holidays.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I suggest new features?</div>
+            <div class="faq-answer">
+                Absolutely! We love hearing from our community. Send feature suggestions to:
+                <ul>
+                    <li><strong>Email:</strong> support@shashlyk.dev</li>
+                    <li><strong>Subject line:</strong> "Feature Request"</li>
+                    <li><strong>Include:</strong> Detailed description of the proposed feature and how it would enhance your spiritual journey</li>
+                </ul>
+                While we can't implement every suggestion, we carefully consider all feedback for future updates.
+            </div>
+        </div>
+
+        <div class="highlight">
+            <strong>Love Rytuals?</strong> We'd be grateful if you could leave a review on the App Store! Your feedback helps other spiritual seekers discover our cosmic community. ⭐⭐⭐⭐⭐
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are you hiring or looking for partnerships?</div>
+            <div class="faq-answer">
+                For business inquiries, partnerships, or career opportunities:
+                <ul>
+                    <li><strong>Email:</strong> hello@shashlyk.dev</li>
+                    <li><strong>Include:</strong> Brief description of your inquiry or proposal</li>
+                    <li><strong>Response time:</strong> 3-5 business days for business inquiries</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
